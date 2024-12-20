@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="csv_excel_azure",
-    version="1.1.0",
+    version="1.1.1",
     author="Vipul Malhotra",
     author_email="vipulm124@gmail.com",
     description="A package to convert CSV files to Excel on Azure Blob Storage.",
