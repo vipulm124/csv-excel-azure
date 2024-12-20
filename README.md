@@ -15,16 +15,17 @@ This project contains a python program that converts CSV files available at azur
 pip install csv-excel-azure
 
 
-from azure_csv_to_excel import AzureBlobConverter
+from csv_excel_azure import AzureCSVToExcelConverter
+
 
 # Azure Blob Storage connection string
 connection_string = "<your-azure-connection-string>"
 
 # Initialize converter
-converter = AzureBlobConverter(connection_string)
+converter = AzureBlobConverter(connection_string="connection_string")
 
 # Convert CSV to Excel
-converter.csv_to_excel(container_name="my-container", blob_name="input.csv")
+converter.csv_to_excel(container_name="container_name", csv_blob_name="file_name")
 
 
 
